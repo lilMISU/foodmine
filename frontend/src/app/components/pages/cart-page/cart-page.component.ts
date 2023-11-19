@@ -4,13 +4,14 @@ import { CartService } from '../../../services/cart.service';
 import { Cart } from '../../../shared/models/Cart';
 import { CartItem } from '../../../shared/models/CartItem';
 import { TitleComponent } from "../../partials/title/title.component";
+import { NotFoundComponent } from "../../partials/not-found/not-found.component";
 
 @Component({
     selector: 'app-cart-page',
     standalone: true,
     templateUrl: './cart-page.component.html',
     styleUrl: './cart-page.component.css',
-    imports: [CommonModule, TitleComponent]
+    imports: [CommonModule, TitleComponent, NotFoundComponent]
 })
 export class CartPageComponent {
   cart!: Cart;
